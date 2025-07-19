@@ -1,0 +1,85 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: white;
+    color: #111;
+}
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+nav {
+    margin-top: 0.5rem;
+}
+nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+footer {
+    background-color: #e0f0ff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.home, .about, .skills, .contact {
+    padding: 2rem;
+}
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.signature {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.4rem;
+}
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.info-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1rem;
+}
+.skills ul, .skills h2 {
+    margin: 1rem 0;
+}
+.skills ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+.contact p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .info-columns {
+        flex-direction: column;
+    }
+    header, .home, .about, .skills, .contact {
+        padding: 1rem;
+    }
+    .profile-img {
+        width: 100%;
+        height: auto;
+    }
+}
